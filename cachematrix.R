@@ -1,3 +1,6 @@
+## makeCacheMatrix creates our own data type which contains original matrix
+## and its inverse matrix in a list
+
 makeCacheMatrix <- function(x = matrix()) {
   
   inv <- NULL
@@ -26,7 +29,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
+## cacheSolve tries to get inverse matrix from our cacheMatrix data type, if it finds
+## it returns directly from cache, else it solves inverse and stores in cache and returns result
 
 cacheSolve <- function(x, ...) {
 
